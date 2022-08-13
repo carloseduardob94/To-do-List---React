@@ -3,6 +3,8 @@ import { Container, Area, Header } from './App.styles'
 import { Item } from './types/Item';
 
 import { ListItem } from  './components/ListItem'
+import { AddArea } from  './components/AddArea'
+
 
 const App = () => {
   const [list, setList] = useState<Item[]>([
@@ -23,6 +25,9 @@ const App = () => {
     <Container>
       <Area>
         <Header>Lista de Tarefas</Header>
+
+        <AddArea />
+
         {list.map((item, index)=>(
           <ListItem key={index} item={item}/>
         ))}
