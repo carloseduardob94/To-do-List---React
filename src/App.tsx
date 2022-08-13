@@ -14,7 +14,7 @@ const App = () => {
     {
       id: 2,
       name: 'Comprar o bolo na padaria',
-      done: false
+      done: true
     }
   ])
 
